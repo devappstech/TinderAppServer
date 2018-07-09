@@ -62,7 +62,7 @@ pg.connect(config.dbURL, function(err, client, done) {
     router.use(function (req, res, next) {
         // do logging
         console.log('Request received by router.');
-        // res.header("Access-Control-Allow-Origin", "*");
+        res.header("Access-Control-Allow-Origin", "*");
 
         next(); // make sure we go to the next routes and don't stop here
     });
