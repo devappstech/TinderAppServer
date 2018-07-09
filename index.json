@@ -1,0 +1,11 @@
+{
+  "dbURL": {
+    "user": "nfnguukyyedypv",
+    "password": "c6c4fcd334bef6c39bce8f9802910913a73045c0154ff4d92c4042d19754834b",
+    "database": "dbde4787qpaujb",
+    "port": 5432,
+    "host": "ec2-54-163-235-56.compute-1.amazonaws.com",
+    "ssl": true
+  },
+  "HTTPServerPort": 5001
+}

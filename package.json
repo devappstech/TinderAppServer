@@ -1,0 +1,38 @@
+{
+  "name": "erosify-server",
+  "version": "1.0.0",
+  "description": "Erosify RESTful API server written in Node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "JSONStream": "~0.7.2",
+    "aws-sdk": "*",
+    "bcrypt": "^0.8.5",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "~1.9.2",
+    "cors": "^2.7.1",
+    "express": "~4.13.x",
+    "jwt-simple": "^0.3.1",
+    "morgan": "~1.5.0",
+    "passport": "^0.3.0",
+    "passport-jwt": "^1.2.1",
+    "pg": "~4.5.5",
+    "pg-query-stream": "~0.4.2",
+    "socket.io": "^1.4.5",
+    "underscore": "~1.6.0"
+  },
+  "engines": {
+    "node": "8.1.4"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}
