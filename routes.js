@@ -223,15 +223,15 @@ exports.check_email = function (req, res) {
     var query = "SELECT * FROM profile WHERE email='" + req.body.email + "';";
     main.client.query(query, function (err, result) {
         console.log('Query done in ' + (new Date() - start ) + 'ms with no problems');
-        res.status(200).json({ success: true });
+        // res.status(200).json({ success: true });
         // res.status(200).json({ success: true, existEmail: result.rows.length > 0 });
-        // if (err) {
-        //     console.log(err);
-        //     res.status(500).json({ success: false, error: err });
-        // }
-        // else {
-        //     res.status(200).json({ success: true, existEmail: result.rows.length > 0 });
-        // }
+        if (err) {
+            // console.log(err);
+            res.status(500).json({ success: false, error: err });
+        }
+        else {
+            res.status(200).json({ success: true, existEmail: result.rows.length > 0 });
+        }
     });
 };
 
